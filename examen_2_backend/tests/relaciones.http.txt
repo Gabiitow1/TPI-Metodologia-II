@@ -1,0 +1,14 @@
+### Relacionar producto y categoría
+
+POST http://127.0.0.1:8000/api/v1/productos/1/categorias
+Content-Type: application/json
+
+{
+  "producto_id": 1,
+  "categoria_id": 1,
+  "es_principal": true
+}
+
+###
+
+GET http://127.0.0.1:8000/api/v1/productos/1/categorias

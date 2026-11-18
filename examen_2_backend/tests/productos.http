@@ -1,0 +1,21 @@
+### Crear producto
+
+POST http://127.0.0.1:8000/api/v1/productos
+Content-Type: application/json
+
+{
+  "nombre": "Pepsi",
+  "descripcion": "Gaseosa cola",
+  "precio_base": 1500,
+  "unidad_venta_id": 5,
+  "stock_cantidad": 10,
+  "disponible": true
+}
+
+###
+
+GET http://127.0.0.1:8000/api/v1/productos
+
+###
+
+GET http://127.0.0.1:8000/api/v1/productos/1

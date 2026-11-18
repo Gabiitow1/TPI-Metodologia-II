@@ -1,0 +1,56 @@
+### Obtener productos
+GET http://127.0.0.1:8000/productos/
+
+###
+
+### Crear producto
+POST http://127.0.0.1:8000/productos/
+Content-Type: application/json
+
+{
+    "nombre": "Coca Cola",
+    "descripcion": "Gaseosa cola",
+    "precio_base": 1500,
+    "imagen_url": "https://imagen.com/coca.jpg",
+    "disponible": true
+}
+
+###
+
+### Obtener producto por id
+GET http://127.0.0.1:8000/productos/1
+
+###
+
+### Actualizar producto
+PUT http://127.0.0.1:8000/productos/1
+Content-Type: application/json
+
+{
+    "nombre": "Coca Cola Zero",
+    "descripcion": "Gaseosa sin azúcar",
+    "precio_base": 1800,
+    "imagen_url": "https://imagen.com/coca-zero.jpg",
+    "disponible": true
+}
+
+###
+
+### Eliminar producto
+DELETE http://127.0.0.1:8000/productos/1
+
+###
+
+### Crear relación producto-categoría
+POST http://127.0.0.1:8000/producto-categoria/
+Content-Type: application/json
+
+{
+    "producto_id": 1,
+    "categoria_id": 1
+}
+
+###
+
+### Obtener relaciones
+GET http://127.0.0.1:8000/producto-categoria/
